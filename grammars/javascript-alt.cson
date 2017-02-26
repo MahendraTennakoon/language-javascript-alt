@@ -1,0 +1,32 @@
+'scopeName': 'source.javascript-alt'
+'name': 'Javascript'
+'fileTypes': [
+  '.js'
+]
+'patterns': [
+  {
+    'match': '^\\s*//.*$'
+    'name': 'comment.line.double-slash.javascript-alt'
+  },
+  {
+    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+    'name': 'constant.numeric.javascript-alt'
+  },
+  {
+    'match': '\\b(break|case|catch|class|const|continue|debugger|default|delete|do|else|export|extends|finally|for|if|import|in|instanceof|new|return|super|switch|this|throw|try|typeof|var|void|while|with|yield)\\b'
+    'name': 'keyword.other.javascript-alt'
+  },
+  {
+    'match': '\\b(function)\\s+(\\w+)'
+    'captures':
+      '1':
+        'name': 'keyword.control.javascript-alt'
+      '2':
+        'name': 'entity.name.function.javascript-alt'
+    'name': 'meta.function.javascript-alt'
+  },
+  {
+    'match': '(\\+|=|\\-|\\<|\\>|\\<=|\\>=|==)'
+    'name': 'constant.character.escape.javascript-alt'
+  }
+]
